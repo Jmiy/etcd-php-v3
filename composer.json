@@ -1,32 +1,43 @@
 {
-  "name": "start-point/etcd-php",
+  "name": "jmiy/etcd-php",
   "type": "library",
   "description": "PHP client for Etcd v3",
-  "keywords": ["etcdv3", "etcd", "etcd-client", "etcd-php"],
-  "homepage": "https://github.com/ouqiang/etcd-php",
+  "keywords": [
+    "etcdv3",
+    "etcd",
+    "etcd-client",
+    "etcd-php"
+  ],
+  "homepage": "https://github.com/Jmiy/etcd-php-v3",
   "license": "MIT",
   "authors": [
     {
-      "name": "ouqiang",
-      "email": "qingqianludao@gmail.com",
-      "homepage": "https://github.com/ouqiang"
+      "name": "Jmiy",
+      "email": "jmiycen@gmail.com",
+      "homepage": "https://github.com/Jmiy"
     }
   ],
-   "require": {
-     "php": ">= 5.5",
-     "guzzlehttp/guzzle": "~6.0"
-   },
-   "require-dev": {
-     "phpunit/phpunit": "4.5.*"
-   },
-   "autoload": {
-     "psr-4": {
-       "Etcd\\": "src/"
-     }
-   },
-   "autoload-dev": {
-     "psr-4": {
-       "Etcd\\Tests\\": "tests/"
-     }
-   }
+  "require": {
+    "php": ">= 5.5",
+    "guzzlehttp/guzzle": "^6.3.1|^7.0.1"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "4.5.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Etcd\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Etcd\\Tests\\": "tests/"
+    }
+  },
+  "suggest": {
+    "guzzlehttp/guzzle": "Required to use the Mailgun mail driver (^6.3.1|^7.0.1)."
+  },
+  "config": {
+    "sort-packages": true
+  }
 }
