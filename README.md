@@ -11,14 +11,14 @@ PHP client for Etcd v3
 
 Requirements
 ------------
-* PHP5.5+
+* PHP 7.2+
 * Composer
 
 
 Installation
 ------------
 ```shell
-composer require start-point/etcd-php
+composer require jmiy/etcd-php
 ```
 
 Usage
